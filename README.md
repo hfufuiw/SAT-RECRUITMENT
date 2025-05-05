@@ -1,4 +1,110 @@
-<div class="question">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    form {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <form id="quizForm">
+    <h1>English Grammar Quiz</h1>
+    <p>Each question is worth 10 points. The total score is 100 points. Please enter your email below to begin.</p>
+
+    <!-- Email Field -->
+    <div class="question">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" placeholder="example@example.com" required>
+    </div>
+
+    <!-- Questions -->
+    <div class="question">
+      <label>1. David was surprised to learn that frogs were primarily carnivorous, he had assumed that they mostly ate plants and vegetables.</label>
+      <input type="radio" name="q1" value="A" required> A. [NO CHANGE]<br>
+      <input type="radio" name="q1" value="B"> B. carnivorous, he had assumed,<br>
+      <input type="radio" name="q1" value="C"> C. carnivorous (he had assumed<br>
+      <input type="radio" name="q1" value="D"> D. carnivorous; he had assumed
+    </div>
+
+    <div class="question">
+      <label>2. A synthesizer - an entirely electronic musical instrument: can usually be categorized into either an "East Coast" or a "West Coast" design philosophy.</label>
+      <input type="radio" name="q2" value="A" required> A. [NO CHANGE]<br>
+      <input type="radio" name="q2" value="B"> B. instrument, can<br>
+      <input type="radio" name="q2" value="C"> C. instrument - can<br>
+      <input type="radio" name="q2" value="D"> D. instrument; can
+    </div>
+
+    <div class="question">
+      <label>3. There are a wide variety of modern dance forms and styles to enjoy. That's one reason my hometown has many different dance studios.</label>
+      <input type="radio" name="q3" value="A" required> A. [NO CHANGE]<br>
+      <input type="radio" name="q3" value="B"> B. enjoy that's<br>
+      <input type="radio" name="q3" value="C"> C. enjoy, that's<br>
+      <input type="radio" name="q3" value="D"> D. enjoy (that's
+    </div>
+
+    <div class="question">
+      <label>4. A professional long-distance runners life revolves around his or her workout schedule, sleep routine, and dietary needs.</label>
+      <input type="radio" name="q4" value="A" required> A. [NO CHANGE]<br>
+      <input type="radio" name="q4" value="B"> B. runner<br>
+      <input type="radio" name="q4" value="C"> C. runner's<br>
+      <input type="radio" name="q4" value="D"> D. runners'
+    </div>
+
+    <div class="question">
+      <label>5. Though the words "vintage" and "classic" are often applied interchangeably, there is a subtle difference: "vintage" has a primary reference to age, while "classic" can add an additional connotation of elegance.</label>
+      <input type="radio" name="q5" value="A" required> A. [NO CHANGE]<br>
+      <input type="radio" name="q5" value="B"> B. difference, "vintage"<br>
+      <input type="radio" name="q5" value="C"> C. difference ("vintage"<br>
+      <input type="radio" name="q5" value="D"> D. difference, so "vintage"
+    </div><div class="question">
       <label>6. Musicians should carefully craft a strategy for their online streaming - the ability for their music to be heard instantly via the internet through a computer or mobile device) to achieve maximum popularity.</label>
       <input type="radio" name="q6" value="A" required> A. [NO CHANGE]<br>
       <input type="radio" name="q6" value="B"> B. streaming (the ability<br>
